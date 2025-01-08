@@ -125,3 +125,9 @@ For SSH access from your computer to the public EC2 instance:
 
 For private EC2 instances needing updates or internet access:
 - Use a NAT Gateway.
+
+
+```
+	•	A NAT Gateway enables outbound internet access from private subnets. It does not itself allow inbound SSH from the internet into private subnets.
+	•	To SSH from your local laptop into an instance via the public internet, that instance must be in a public subnet (with a route to the Internet Gateway) and must have a public IP or an Elastic IP.
+```
